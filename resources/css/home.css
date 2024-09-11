@@ -235,7 +235,7 @@ body {
 
   .header::before {
     content: "";
-    background-image: url(../images/baseImg/mainImg.png);
+    background-image: url(../images/baseImg/mainmml.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -288,22 +288,22 @@ body {
   @keyframes move {
     25% {
       border-radius: 1rem;
-      box-shadow: 2px 5px 20px #00a20b;
+      box-shadow: 2px 5px 20px #007b08;
     }
 
     50% {
-      box-shadow: 2px 5px 20px #315098;
+      box-shadow: 2px 5px 20px #122d6c;
       border-radius: 1rem;
     }
 
     75% {
       border-radius: 1rem;
-      box-shadow: 2px 5px 20px #ff99bb;
+      box-shadow: 2px 5px 20px #6b0036;
     }
 
     100% {
       border-radius: 1rem;
-      box-shadow: 2px 5px 20px #a5ffab;
+      box-shadow: 2px 5px 20px #007e43;
     }
   }
 
