@@ -5,12 +5,13 @@
   src: url("../fonts/Lalezar.woff2") format("woff2");
   src: url("../fonts/Lalezar.eot") format("eot");
 }
+
 @font-face {
   font-family: "Dirooz";
-  src: url("../CodeUse-Site/resources/fonts/Dirooz.eot") format("eot");
-  src: url("../CodeUse-Site/resources/fonts/Dirooz.ttf") format("ttf");
-  src: url("../CodeUse-Site/resources/fonts/Dirooz.woff") format("woff");
-  src: url("../CodeUse-Site/resources/fonts/Dirooz.woff2") format("woff2");
+  src: url("../fonts/Dirooz.eot") format("eot");
+  src: url("../fonts/Dirooz.ttf") format("ttf");
+  src: url("../fonts/Dirooz.woff") format("woff");
+  src: url("../fonts/Dirooz.woff2") format("woff2");
 }
 
 /* Css Reset */
@@ -151,11 +152,9 @@ body {
   background: #fafafa;
 }
 
-@media screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
 
 @media screen and (min-width: 1024px) {
   .hamburger-menu {
@@ -209,12 +208,15 @@ body {
     25% {
       margin-top: 2.5rem;
     }
+
     50% {
       margin-top: 2rem;
     }
+
     75% {
       margin-top: 1.5rem;
     }
+
     100% {
       margin-top: 1rem;
     }
@@ -385,17 +387,29 @@ body {
   }
 
   .home-box h6 {
+    transition: all 0.25s ease-in-out;
     color: #315098;
     font-family: Dirooz;
     font-size: 1.75rem;
     text-align: center;
   }
+
+  .home-box a {
+    text-decoration: none;
+  }
+
+  .home-box h6:hover {
+    font-size: 2rem;
+    color: #5e6e94;
+  }
+
   .home-box p {
     color: #000;
     font-family: Dirooz;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 1rem auto;
     text-align: center;
+    line-height: 2rem;
   }
 
   .icon-header {
@@ -406,20 +420,78 @@ body {
     color: #315098;
   }
 
-.start{
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto;
-  padding: 1rem;
-  font-family: Lalezar;
-  font-size: 1.5rem;
-  background: #a5c0ff;
-  border-radius: 1.5rem;
-  width: max-content;
+  .start {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+  .startimg {
+    width: 30%;
+    margin: 1rem;
+  }
+
+  .start h6 {
+    background: #a5c0ff;
+    font-family: Lalezar;
+    font-size: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1.5rem;
+  }
+
+  .start h6:hover {
+    transition: all 0.25s ease-in-out;
+    background: #c7d1e8;
+  }
+
+  .start a {
+    text-decoration: none;
+  }
+
+  .icon-header1 {
+    font-size: 1.8rem;
+    margin: auto;
+    color: #315098;
+  }
+
+  h5 {
+    font-size: 2rem;
+    font-family: Lalezar;
+    text-align: right;
+    margin: 0.5rem 3rem;
+  }
+
+  .prices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .price {
+    margin: 1rem;
+    padding: 1rem;
+    width: 28%;
+    box-shadow: 2px 2px 15px #8ca8be;
+    border-radius: 1.5rem;
+  }
+
+  .price h6 {
+    font-size: 1.5rem;
+    font-family: Dirooz;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .price p {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem auto;
+    font-size: 1.25rem;
+    font-family: Dirooz;
+    text-align: center;
+    line-height: 1.5rem;
+  }
 }
-
-
-}
-
-
-
