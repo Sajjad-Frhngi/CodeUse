@@ -186,7 +186,7 @@ body {
 
   .itemnav:hover {
     color: #315098;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 
   .navbar {
@@ -235,7 +235,7 @@ body {
 
   .header::before {
     content: "";
-    background-image: url(../images/baseImg/mainmml.png);
+    background-image: url(../images/baseImg/mainImg.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -399,7 +399,7 @@ body {
   }
 
   .home-box h6:hover {
-    font-size: 2rem;
+    font-size: 1.90rem;
     color: #5e6e94;
   }
 
