@@ -186,7 +186,6 @@ body {
 
   .itemnav:hover {
     color: #315098;
-    font-size: 1.3rem;
   }
 
   .navbar {
@@ -399,8 +398,7 @@ body {
   }
 
   .home-box h6:hover {
-    font-size: 1.90rem;
-    color: #5e6e94;
+    color: #9ab3ed;
   }
 
   .home-box p {
@@ -461,7 +459,7 @@ body {
     font-size: 2rem;
     font-family: Lalezar;
     text-align: right;
-    margin: 0.5rem 3rem;
+    margin: 3rem;
   }
 
   .prices {
@@ -494,4 +492,49 @@ body {
     text-align: center;
     line-height: 1.5rem;
   }
+
+  .courses {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+
+  .course {
+    width: 27%;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 30px#a3a3a3;
+    border-radius: 1.5rem;
+  }
+
+  .course img {
+    display: flex;
+    width: 100%;
+    border-radius: 1.5rem;
+    margin: -5rem auto 1rem auto;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .course .course-name {
+    font-size: 1.5rem;
+    font-family: Lalezar;
+    text-align: center;
+  }
+
+  .courses i {
+    font-size: 1.5rem;
+    color: #315098;
+    margin: 0 0.2rem;
+  }
+}
+
+.course_a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.course_a:hover{
+  color: #0062d2;
 }
