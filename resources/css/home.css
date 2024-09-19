@@ -149,12 +149,19 @@ table {
 /* End CSS Reset */
 
 body {
-  background: #fafafa;
+  background: #fafafaaa;
+  font-family: sans-serif;
 }
 
-@media screen and (max-width: 767px) {}
+a {
+  text-decoration: none;
+}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
 
 @media screen and (min-width: 1024px) {
   .hamburger-menu {
@@ -171,7 +178,6 @@ body {
   .itemnav {
     font-family: Dirooz;
     cursor: pointer;
-    text-decoration: none;
     font-size: 1.25rem;
     color: black;
     font-weight: bolder;
@@ -335,7 +341,6 @@ body {
   .slide {
     font-family: Dirooz;
     font-size: 1rem;
-    text-decoration: none;
     color: #000;
     font-weight: bold;
     flex: 0 0 auto;
@@ -393,10 +398,6 @@ body {
     text-align: center;
   }
 
-  .home-box a {
-    text-decoration: none;
-  }
-
   .home-box h6:hover {
     color: #9ab3ed;
   }
@@ -445,10 +446,6 @@ body {
     background: #c7d1e8;
   }
 
-  .start a {
-    text-decoration: none;
-  }
-
   .icon-header1 {
     font-size: 1.8rem;
     margin: auto;
@@ -459,7 +456,7 @@ body {
     font-size: 2rem;
     font-family: Lalezar;
     text-align: right;
-    margin: 3rem;
+    margin: 2rem;
   }
 
   .prices {
@@ -492,33 +489,43 @@ body {
     text-align: center;
     line-height: 1.5rem;
   }
-
   .courses {
     display: flex;
-    width: 95%;
+    flex-wrap: wrap; /* به عناصر اجازه می‌دهد که رپ شوند */
+    width: 100%;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 5rem auto 1.5rem auto;
   }
-
   .course {
-    width: 27%;
-    padding: 1.5rem;
-    box-shadow: 2px 2px 30px#a3a3a3;
+    margin: 0.75rem 0.75rem 4rem 0.75rem;
+    padding: 1rem;
+    height: 25rem;
+    box-shadow: 2px 2px 30px #a3a3a3;
     border-radius: 1.5rem;
+    flex: 0 1 calc(30% - 1rem); /* هر دوره 1/3 از عرض را می‌گیرد */
+    box-sizing: border-box;
   }
 
   .course img {
     display: flex;
-    width: 100%;
-    border-radius: 1.5rem;
-    margin: -5rem auto 1rem auto;
     justify-content: center;
-    transition: all 0.3s ease-in-out;
+    width: 85%;
+    height: 12rem;
+    margin: -5rem auto 1.5rem auto;
+    transition: all 0.2s ease-in-out;
+    clip-path: inset(0);
+    border-radius: 1.5rem;
+  }
+
+  .course img:hover {
+    filter: grayscale(50%);
+    border-radius: 1.5rem;
   }
 
   .course .course-name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    color: #000;
     font-family: Lalezar;
     text-align: center;
   }
@@ -526,15 +533,50 @@ body {
   .courses i {
     font-size: 1.5rem;
     color: #315098;
-    margin: 0 0.2rem;
   }
-}
+  .course-price,
+  .course-teacher,
+  .course-source {
+    display: inline-block;
+    font-family: Dirooz;
+    font-size: 1rem;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    margin: 0.75rem 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .course-price:hover,
+  .course-source:hover {
+    color: #0062d2;
+  }
 
-.course_a {
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
+  .course p {
+    display: flex;
+    font-family: Dirooz;
+    font-size: 0.9rem;
+    color: #000000ab;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem auto;
+    line-height: 1.5rem;
+  }
 
-.course_a:hover{
-  color: #0062d2;
+  .course-link {
+    display: flex;
+    font-family: Lalezar;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0.75rem auto 0 auto;
+    color: #315098;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .course-link:hover{
+    color: #6789b9;
+    font-size: 1.55rem;
+  } 
+
 }
